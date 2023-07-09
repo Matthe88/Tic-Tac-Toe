@@ -28,7 +28,7 @@ public class Main {
             if (gameFieldContens[i] == 'O') {
                 countO++;
             }
-            if (gameFieldContens[i] == '_') {
+            if (gameFieldContens[i] == ' ') {
                 countEmpty++;
             }
         }
@@ -46,9 +46,6 @@ public class Main {
             } else {
                 newValue = 'X';
             }
-
-
-
 
             boolean winX = Analyzer.winX(gameFieldContens, countX, countO, countEmpty);
             boolean winO = Analyzer.winO(gameFieldContens, countX, countO, countEmpty);
@@ -71,10 +68,12 @@ public class Main {
                 System.out.println("Impossible");
             }
 
-            if (Analyzer.notFinished(countX, countO, countEmpty, winX, winO) == true) {
-                System.out.println("Game not finished");
-            }
+       //  if (Analyzer.notFinished(countX, countO, countEmpty, winX, winO) == true) {
+       //        System.out.println("Game not finished");
+       //   }
         }
+      System.exit(0);
+
     }
 }
 

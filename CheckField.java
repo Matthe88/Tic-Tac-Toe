@@ -15,6 +15,17 @@ public class CheckField {
         int reihe = 0;
         int spalte = 0;
         boolean messageNumber = false;
+        char otherValue = 'X';
+
+        if (newValue == 'X') {
+            otherValue = 'O';
+        }
+
+        if (newValue == 'O') {
+            otherValue = 'X';
+        }
+
+
 
 
 
@@ -39,7 +50,7 @@ public class CheckField {
                 return newValue;
             } else if (gameField[0] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
+
 
             }
         }
@@ -51,7 +62,7 @@ public class CheckField {
                 return newValue;
             } else if (gameField[1] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
+
 
 
             }
@@ -64,7 +75,7 @@ public class CheckField {
                 return newValue;
             } else if (gameField[2] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
+
 
             }
         }
@@ -76,7 +87,7 @@ public class CheckField {
                 return newValue;
             } else if (gameField[3] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
+
 
 
             }
@@ -89,7 +100,7 @@ public class CheckField {
                 return newValue;
             } else if (gameField[4] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
+
 
 
             }
@@ -102,7 +113,7 @@ public class CheckField {
                 return newValue;
             } else if (gameField[5] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
+
 
 
             }
@@ -115,7 +126,7 @@ public class CheckField {
                 return newValue;
             } else if (gameField[6] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
+
 
 
             }
@@ -128,7 +139,6 @@ public class CheckField {
                 return newValue;
             } else if (gameField[7] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
 
 
             }
@@ -141,18 +151,13 @@ public class CheckField {
                 return newValue;
             } else if (gameField[8] != ' ') {
                 System.out.println("This cell is occupied! Choose another one!");
-                return newValue;
-
-
             }
         }
 
-        return  newValue;
 
+        return otherValue;
 
     }
-
-
 }
 
 
